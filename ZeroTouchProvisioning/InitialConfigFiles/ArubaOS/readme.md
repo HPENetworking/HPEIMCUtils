@@ -1,6 +1,12 @@
-# Notes on ArubaOS Autodeployment
+# ArubaOS 
 
-Taken from the ArubaOS docuemntation
+These configurations have been provided for the following platforms
+
+
+
+## Notes on ArubaOS Autodeployment
+
+Taken from the ArubaOS documentation
 
 7.14.1 DHCP auto deployment
 Auto deployment relies on DHCP options and the current DHCP auto-configuration function. Auto deployment is platform independent, avoiding the J-number validation of the downloaded configuration file when downloaded using DHCP option 66/67. The downloaded configuration file has an IGNORE tag immediately after the J-number in its header.
