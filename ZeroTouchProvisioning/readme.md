@@ -4,12 +4,13 @@ HPE IMC Base platform contains a features called *Auto Deployment Plan* which al
 
 The process works as follows
 
-1 Operator sets DHCP option 66 ( IMC TFTP Server )and DHCP option 67 intial configuration file name
-2 Operator plugs device into VLAN where DHCP is provided with option 66 and option 67
-3 Device contacts IMC TFTP server and requests the filename as learned from DHCP 67
-4 IMC contacts device at source IP of TFTP request using default credentials from initial config file
-5 IMC attempts to match device to a defined list of devices in the auto-deployment plan **a csv file can be used to import the list**
-6 If a match occurs, IMC will push settings defined in the ADP list to the device. 
+
+1. Operator sets DHCP option 66 ( IMC TFTP Server )and DHCP option 67 intial configuration file name
+2. Operator plugs device into VLAN where DHCP is provided with option 66 and option 67
+3. Device contacts IMC TFTP server and requests the filename as learned from DHCP 67
+4. IMC contacts device at source IP of TFTP request using default credentials from initial config file
+5. IMC attempts to match device to a defined list of devices in the auto-deployment plan **a csv file can be used to import the list**
+6. If a match occurs, IMC will push settings defined in the ADP list to the device. 
 
 
 ## CSV File
