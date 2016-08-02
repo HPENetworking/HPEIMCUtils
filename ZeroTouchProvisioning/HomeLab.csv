@@ -48,5 +48,10 @@ Other authentication modes are not supported.",SSH port number. ,SSH username.,S
 1 for yes"
 ConfigFile,TargetIp,MACAddress,CurrentDeviceIp,ConfigPara,UnitId,changDeviceInfo,DeviceName,DeviceGroup,DeploySoft,CLIScript,CLIPara,changSnmpPara,SnmpParaVersion,SnmpParaRead,SnmpParaWrite,SnmpParaSecurityUser,SnmpParaContextName,SnmpParaSecuMode,SnmpParaAuthScheme,SnmpParaAuthPassword,SnmpParaPrivScheme,SnmpParaPrivPassword,SnmpParaTimeOut,SnmpParaRetry,PingDevType,changTelnet,TelnetStyle,TelnetUseName,TelnetPassword,TelnetSuperWord,TelnetTimeout,changeSsh,SshParaAuthType,SshParaPort,SshParaUserName,SshParaPassword,SshParaRetries,SshParaTimeOut,LoginType,sendTrap,delBackupSoftFlag,delCurrSoftFlag,mainToBackupFlag,backupCfgFlag
 ADP_Configs\5900ADP_w_Netconf.cfg,10.20.10.10,D0-7E-28-EC-AA-48,10.20.10.10,Mgmt IP Address: 10.20.10.10,,0,,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,0
-ADP_Configs\5400R_Final_Config.cfg,10.11.10.3,64-51-06-79-0C-00,10.11.10.3,,,1,5400R,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,
-ADP_Configs\2920_Final.cfg,10.11.10.2,74-46-a0-ff-c4-40,10.11.10.2,,,1,2920,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,
+ADP_Configs\5400R_Final_Config.cfg,10.11.10.3,64-51-06-79-0C-00,10.11.10.3,,,1,5400R,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,1
+ADP_Configs\2920_Final_Config.cfg,10.11.10.2,74-46-a0-ff-c4-40,10.11.10.2,,,1,2920,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,1
+ADP_Configs\MSR930_Final_Config.cfg,10.11.10.1,B8-AF-67-A2-14-5D,10.11.10.1,,,1,MSR930,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,1
+ADP_Configs\2530_Final_Config.cfg,10.11.10.6,80-c1-6e-cd-91-e0,10.11.10.6,,,1,2530,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,1
+ADP_Configs\5400_Final_Config.cfg,10.11.10.4,00-26-f1-e5-e0-00,10.11.0.4,,,1,5400,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,1
+ADP_Configs\3500_Final_Config.cfg,10.11.10.5,00-16-35-22-a7-40,10.11.0.5,,,1,3500yl,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,1
+ADP_Configs\3800_Final_Config.cfg,10.11.10.7,e4-11-5b-cb-af-80,10.11.10.7,,,1,3800,,,,,1,2,public,private,,,,,,,,,,0,1,1,admin,password,,4,1,0,22,admin,password,3,10,1,1,,,,1
