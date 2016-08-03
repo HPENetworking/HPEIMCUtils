@@ -1,0 +1,32 @@
+
+<adapter name="NortelERS">
+	<description> </description>
+	<version>1.0.0</version>
+	<services>
+		<service name="CLICommon">
+			<item type="common">NortelERS_Common_CLI.xml</item>
+		</service>
+
+		<service name="CleanupParser">
+			<item type="parser_definition">NortelERS_Cleanup_Parser.xml</item>
+			<item type="perl_script">NortelERS_Cleanup_Parser_Script.pl</item>
+		</service>
+
+		<service name="ConfigBackup">
+			<item type="builder_definition">NortelERS_Config_Backup_Builder.xml</item>
+			<item type="tcl_script">NortelERS_Config_Backup_Builder_Script.xml</item>
+		</service>
+
+		<service name="ConfigDeploy">
+			<item type="builder_definition">NortelERS_Config_Deploy_Builder.xml</item>
+			<item type="tcl_script">NortelERS_Config_Deploy_Builder_Script.xml</item>
+		</service>
+
+		<!--service name="ImageDeploy">
+			<item type="builder_definition">NortelERS_Image_Deploy_Builder.xml</item>
+			<item type="tcl_script">NortelERS_Image_Deploy_Builder_Script.xml</item>
+		</service-->
+
+	</services>
+</adapter>
+
