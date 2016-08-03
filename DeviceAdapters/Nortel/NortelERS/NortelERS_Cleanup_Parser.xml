@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<parser>
+    <perlfile>NortelERS_Cleanup_Parser_Script.pl</perlfile>
+    
+    <script name="cleanupPartionName">
+		<callfunction name="cleanupPartionName">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">partion_name</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupFreeSize">
+		<callfunction name="cleanupFreeSize">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">free_size</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupBoardNumber">
+		<callfunction name="cleanupBoardNumber">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">board_number</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupTFTPConfiguration">
+		<callfunction name="cleanupTFTPConfiguration">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">cleanedConfig</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupImageVersion">
+		<callfunction name="cleanupImageVersion">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">image_version</result>
+		</callfunction>
+	</script>	
+	
+	<script name="cleanupImagePosition">
+		<callfunction name="cleanupImagePosition">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">image_position</result>
+		</callfunction>
+	</script>	
+	
+	<script name="cleanupImageSize">
+		<callfunction name="cleanupImageSize">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">image_size</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupConfiguration">
+		<callfunction name="cleanupConfiguration">
+			<parameterspec name="0" type="data_string"/>
+			<parameterspec name="1" type="data_string_in_set">binary_configuration</parameterspec>
+			<result type="single">configuration</result>
+		</callfunction>
+	</script>
+	<script name="cleanupTFTPConfiguration">
+		<callfunction name="cleanupTFTPConfiguration">
+			<parameterspec name="0" type="data_string"/>
+			<parameterspec name="1" type="data_string_in_set">binary_configuration</parameterspec>
+			<result type="single">cleanedConfig</result>
+		</callfunction>
+	</script>
+</parser>

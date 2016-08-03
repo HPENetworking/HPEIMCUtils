@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<parser>
+    <perlfile>BayStack425_Cleanup_Parser_Script.pl</perlfile>
+    
+	<script name="getDiag">
+		<callfunction name="getDiag">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">testvalue</result>
+		</callfunction>
+	</script>
+</parser>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<scripts>
+
+	<command name="backup_running_config_cli" method="CLI">
+		<error>Failed to dump configuration in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            backup_running_config_cli.tcl
+		</script>
+	</command>
+	
+	<command name="backup_running_config_tftp" method="TFTP">
+		<error>Failed to dump running configuration in TFTP.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            backup_running_config_tftp.tcl
+		</script>
+	</command>	
+	
+	<command name="backup_startup_config_cli" method="CLI">
+		<error>Failed to dump startup configuration in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            backup_startup_config_cli.tcl
+		</script>
+	</command>
+	
+	<command name="backup_startup_config_tftp" method="TFTP">
+		<error>Failed to dump startup configuration in TFTP.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            backup_startup_config_tftp.tcl
+		</script>
+	</command>	
+	
+</scripts>
