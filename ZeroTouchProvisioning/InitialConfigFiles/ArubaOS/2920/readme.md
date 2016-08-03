@@ -5,6 +5,13 @@ This folder contains the following files
 - Aruba2920InitialConfig.cfg
 - 2920_Final.cfg
 
+## J number in Config files
+
+The initial configuration file provided will only work with the HP 2920-24G-PoE+ Switch (J9727A) in non stacking.
+For the provided initial configurations, the J number *MUST* match that of the platform you are trying to auto-deploy to. 
+
+
+
 ## Notes
 
 - ArubaOS switches are extremely sensitive to the contents of the startup.cfg file.
