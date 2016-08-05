@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 ./.idea/*
-
+from py
 # C extensions
 *.so
 
@@ -89,3 +89,4 @@ ENV/
 # Rope project settings
 .ropeproject
 .idea/
+Export_Assets/all_assets.csv

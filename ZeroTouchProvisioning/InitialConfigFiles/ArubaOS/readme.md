@@ -3,8 +3,13 @@
 ## Tested Platforms
 These configurations have been provided for the following platforms
 
-- 2920 J9727A - Single switch - non stacking
+- 2920 J9727A - HP 2920-24G-PoE+ Switch - non stacking
 - 5400R J9850A - 5406R Platform
+- 2530 J9773A - HP 2530-24G-PoE+
+- 3500yl J8692A - HP 3500yl-24G-PWR Switch
+- 3800 J9573A - HP 3800-24G-PoE+-2SFP+ Switch
+- 5400zl J9850A - HP 5406zl Switch
+
 
 
 ## ArubaOS Configurations
@@ -17,7 +22,9 @@ number and some additional parameters in the startup config file.
 If the J number in the configuration does not match the J number of the device,
 the device will refuse the configuration file.
 
-For non-stackable or chassis platofrms, the **IGNORE** command can be used
+For the provided initial configurations, the J number *MUST* match that of the platform you are trying to auto-deploy to. 
+
+For 25xx and 26xx platforms, the **IGNORE** command can be used
 to allow a single initial configuration file to be deployed to multiple device types
 and models.
 
