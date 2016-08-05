@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<definition>
+
+	<action name="deploy_image">
+		<step>
+			<command name="deploy_image_tftp" description="deploy image via TFTP through CLI"/>			
+		</step>
+	</action>
+
+	<action name="reload_device">
+		<step>
+			<command name="reload_device" description="reboot device"/>
+		</step>
+	</action>
+	
+	<action name="deploy_image">				
+		<step>
+			<command name="determine_diag">
+				<result name="testvalue">
+					<parser key="determine_diag" parserName="CleanupParser" parserRet="testvalue" parserScript="getDiag"/>
+				</result>
+			</command>
+		</step>
+		<step>
+		    <command name="updateimage_cli" description="retrieve image via CLI">
+                <condition property="testvalue" value="false"/>
+            </command>
+		    <command name="updatediag_cli" description="retrieve image via CLI">
+                <condition property="testvalue" value="true"/>
+            </command>
+	    </step>
+	</action>
+
+</definition>

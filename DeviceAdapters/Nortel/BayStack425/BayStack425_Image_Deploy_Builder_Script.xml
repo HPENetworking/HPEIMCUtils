@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<scripts>
+    
+	<command name="updateimage_cli" method="TFTP">
+		<error>Failed to download configuration from TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            updateimage_cli.tcl
+		</script>
+	</command>
+	
+	
+	<command name="updatediag_cli" method="TFTP">
+		<error>Failed to download configuration from TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            updatediag_cli.tcl
+		</script>
+	</command>
+	
+	<command name="reload_device" method="CLI">
+	    <error>An error occurred while trying to reload device.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            reload.tcl
+		</script>
+	</command>
+	
+	<command name="determine_diag" method="CLI">
+	    <error>An error occurred while trying to reload device.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            determine_diag.tcl
+		</script>
+	</command>
+
+</scripts>

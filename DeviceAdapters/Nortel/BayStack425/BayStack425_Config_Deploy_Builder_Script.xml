@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<scripts>  
+
+	<command name="save_config" method="CLI">
+	    <error>An error occurred while trying to save the configuration.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            save_config.tcl
+		</script>
+	</command>
+	
+	<command name="deploy_startup_config_tftp" method="TFTP">
+		<error>Failed to load configuration file via TFTP.  TFTP server or file may not be valid, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            deploy_startup_config_tftp.tcl
+		</script>
+	</command>
+	
+	<command name="reload_device" method="CLI">
+	    <error>An error occurred while trying to reload device.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            reload.tcl
+		</script>
+	</command>
+
+</scripts>
+
