@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<scripts>
+    <command name="deploy_config_scp" method="CLI">
+		<error>Failed to copy configuration to device via SCP.</error>
+		<require-mode>config_term</require-mode>
+		<script>
+            deploy_config_scp.tcl
+		</script>
+	</command>
+	
+    <command name="deploy_startup_config_tftp" method="TFTP">
+		<error>Failed to download configuration from TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            deploy_startup_config_tftp.tcl
+		</script>
+	</command>
+		
+    <command name="load_running_config_cli" method="CLI">
+		<error>Failed to download configuration from TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>config_term</require-mode>
+		<script>
+            load_running_config_cli.tcl
+		</script>
+	</command>
+	
+	<command name="load_startup_config_cli" method="CLI">
+		<error>Failed to download configuration from TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>config_term</require-mode>
+		<script>
+            load_startup_config_cli.tcl
+		</script>
+	</command>
+	
+	<command name="commit_config" method="CLI">
+		<error>Failed commit deployed changes.</error>
+		<require-mode>config_term</require-mode>
+		<script>
+            commit_config.tcl
+		</script>
+	</command>
+	
+	<command name="cleanup_deployed_file" method="CLI">
+		<error>Failed to erase deployed file.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            cleanup_deployed_file.tcl
+		</script>
+	</command>
+
+	<command name="reload_device" method="CLI">
+	    <error>An error occurred while trying to reload device.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            reload.tcl
+		</script>
+	</command>
+	
+	<command name="save_config" method="CLI">
+	    <error>An error occurred while trying to save the configuration.</error>
+		<require-mode>config_term</require-mode>
+		<script>
+            save_config.tcl
+		</script>
+	</command>
+
+</scripts>
+

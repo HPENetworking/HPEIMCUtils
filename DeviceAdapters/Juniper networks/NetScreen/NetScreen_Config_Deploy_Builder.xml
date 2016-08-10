@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<definition>
+    <action name="deploy_running_config">
+		<step>
+			<command name="deploy_running_config_tftp" description="deploy to running configuration via TFTP">                
+            </command>
+		</step>
+	</action>
+	<action name="save_config">
+		<step>
+			<command name="save_config" description="Save Current Configuration of the Device."/>
+		</step>
+	</action>
+	<action name="reload_device">
+		<step>
+			<command name="reload_device" description="reboot device"/>
+		</step>
+	</action>
+
+</definition>
