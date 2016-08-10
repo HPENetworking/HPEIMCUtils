@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<scripts>
+
+	<command name="backup_running_config_tftp" method="TFTP">
+		<error>Failed to upload configuration to TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>		
+		<require-mode>enable</require-mode>		
+		<script>
+            backup_startup_config_tftp.tcl
+		</script>
+	</command>
+
+	<command name="backup_startup_config_tftp" method="TFTP">
+		<error>Failed to upload startup configuration to TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>		
+		<require-mode>enable</require-mode>	
+		<script>
+            backup_startup_config_tftp.tcl
+		</script>
+	</command>
+
+</scripts>
