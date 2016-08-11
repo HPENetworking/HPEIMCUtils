@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<scripts>
+
+	<command name="deploy_image" method="TFTP">
+		<error>Unkonwn commmand. Out of memory.  transmit error.  </error>		
+		<require-mode>enable</require-mode>		
+		<script>
+            deploy_image.tcl
+		</script>
+	</command>
+	
+  <command name="get_partion_info" method="CLI">
+		<error>Failed to get partion information in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            get_partion_info.tcl
+		</script>
+	</command>
+	
+  <command name="set_device_boot" method="TFTP">
+		<error>Unkonwn commmand. transmit error.  </error>		
+		<require-mode>enable</require-mode>		
+		<script>
+            set_device_boot.tcl
+		</script>
+	</command>
+</scripts>

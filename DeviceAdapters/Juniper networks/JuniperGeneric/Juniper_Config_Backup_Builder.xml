@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<definition>
+
+	<action name="backup_startup_config">
+	    <step>    			        
+    		<command name="prepare_startup_config_cli" description="prepare configuration for download via CLI or SCP">
+    		</command>  		
+		</step>
+		<step>    			        
+    		<!--command name="backup_startup_config_scp" description="Retrieve configuration by SCP">
+    		   <result name="startup_configuration">
+    				<parser parserName="CleanupParser" parserRet="configuration" parserScript="cleanupStartupConfiguration"/>
+    			</result>
+    		</command-->  
+    		<command name="backup_startup_config_tftp" description="Retrieve configuration by tftp">    		   
+    		</command>  	
+    		<command name="backup_startup_config_cli" description="Backup startup configuration via CLI">
+    			<result name="startup_configuration">
+    				<parser parserName="CleanupParser" parserRet="configuration" parserScript="cleanupConfiguration"/>
+    			</result>
+    		</command>    		
+		</step>
+	</action>		
+        <action name="backup_running_config">
+	    <step>    			        
+    		<command name="prepare_startup_config_cli" description="prepare configuration for download via CLI or SCP">
+    		</command>  		
+		</step>
+		<step>    			        
+    		<!--command name="backup_startup_config_scp" description="Retrieve configuration by SCP">
+    		   <result name="startup_configuration">
+    				<parser parserName="CleanupParser" parserRet="configuration" parserScript="cleanupStartupConfiguration"/>
+    			</result>
+    		</command-->  
+    		<command name="backup_startup_config_tftp" description="Retrieve configuration by tftp">    		   
+    		</command>  	
+    		<command name="backup_startup_config_cli" description="Backup startup configuration via CLI">
+    			<result name="running_configuration">
+    				<parser parserName="CleanupParser" parserRet="configuration" parserScript="cleanupConfiguration"/>
+    			</result>
+    		</command>    		
+		</step>
+	</action>		
+</definition>

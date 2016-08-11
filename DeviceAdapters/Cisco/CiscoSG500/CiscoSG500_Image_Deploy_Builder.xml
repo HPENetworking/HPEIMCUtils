@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<definition>
+
+	<action name="deploy_image">
+		<step>
+			<command name="deploy_image" description="deplpoy image via TFTP through CLI"/>			
+		</step>
+	</action>
+	
+	<action name="get_partion_info">
+		<step>
+    		<command name="get_partion_info" description="Get device partion info via CLI">
+    			<result name="partion_name">
+    				<parser parserName="CleanupParser" parserRet="partion_name" parserScript="cleanupPartionName"/>
+    			</result>
+    			<result name="free_size">
+    				<parser parserName="CleanupParser" parserRet="free_size" parserScript="cleanupFreeSize"/>
+    			</result>
+    		</command>
+		</step>
+	</action>
+	
+  <action name="set_device_boot">
+		<step>
+			<command name="set_device_boot" description="set device boot via TFTP through CLI"/>			
+		</step>
+	</action>
+
+</definition>

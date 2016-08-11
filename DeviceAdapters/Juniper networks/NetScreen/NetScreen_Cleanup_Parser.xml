@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<parser>
+    <perlfile>NetScreen_Cleanup_Parser_Script.pl</perlfile>    	
+	
+	<script name="cleanupCLIConfiguration">
+		<callfunction name="cleanupTFTPConfiguration">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">cleanedConfig</result>
+		</callfunction>
+	</script>	
+</parser>

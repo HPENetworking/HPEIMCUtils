@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<scripts>
+	<command name="getversion_cli" method="CLI">
+		<error>Failed to get version info via CLI. Command syntax may be incorrect or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            getversion_cli.tcl
+		</script>
+	</command>
+
+	<command name="deploy_image_ftp" method="FTP">
+		<error>Failed to copy OS image to device via FTP.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            deploy_image_ftp.tcl
+		</script>
+	</command>
+ 
+	<command name="deploy_image_ftp_shell" method="FTP">
+		<error>Failed to copy OS image to device via FTP.</error>
+		<require-mode>shell</require-mode>
+		<script>
+            deploy_image_ftp_shell.tcl
+		</script>
+	</command>
+
+	<command name="deploy_image_scp" method="SCP">
+		<error>Failed to copy OS image to device via SCP.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            deploy_image_scp.tcl
+		</script>
+	</command>
+
+	<command name="verify_image" method="CLI">
+		<error>Failed to verify OS in CLI. Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            verify_image.tcl
+		</script>
+	</command>
+	
+	<command name="load_image" method="CLI">
+		<error>Failed to load OS in CLI. Command syntax may be incorrect, or prompts may not be what was expected</error>
+		<require-mode>exec</require-mode>
+		<script>
+            load_image.tcl
+		</script>
+	</command>
+
+	<command name="delete_image" method="CLI">
+		<require-mode>exec</require-mode>
+		<script>
+            delete_image.tcl
+		</script>
+	</command>
+	
+	<command name="backup_image_scp" method="SCP">
+		<error>Failed to copy file from device via SCP.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            backup_image_scp.tcl
+		</script>
+	</command>
+	
+	<command name="set_device_boot" method="CLI">
+		<require-mode>exec</require-mode>
+		<script>
+            set_device_boot.tcl
+		</script>
+	</command>	
+
+	<command name="getversion" method="CLI">
+		<error>Failed to get version information in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            getversion.tcl
+		</script>
+	</command>
+	
+	<command name="get_image_version" method="CLI">
+		<error>Failed to get version information in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            get_image_version.tcl
+		</script>
+	</command>
+	
+	<command name="get_image_position" method="CLI">
+		<error>Failed to get current image position information in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            get_image_position.tcl
+		</script>
+	</command>
+
+    <command name="get_image_size" method="CLI">
+		<error>Failed to get current image size information in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            get_image_size.tcl
+		</script>
+	</command>
+
+    <command name="get_partion_info" method="CLI">
+		<error>Failed to get partion information in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            get_partion_info.tcl
+		</script>
+	</command>
+</scripts>
