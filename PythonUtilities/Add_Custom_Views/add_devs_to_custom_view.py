@@ -42,6 +42,6 @@ def add_subnet_to_custom_views(network_range, view_name, auth, url):
 add_subnet_to_custom_views('10.11.', "MobileFirst", auth.creds, auth.url)
 
 
-current_devs = get_custom_view_details('MobileFirst', auth.creds, auth.url)
+
 
 

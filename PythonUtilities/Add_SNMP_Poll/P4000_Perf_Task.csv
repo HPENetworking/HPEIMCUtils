@@ -1,0 +1,17 @@
+UnitType,itemName,userAddUnit,unit,selectDefaultUnit,indexType,indexDesc,itemFunction
+0,clusClusterStatsIoLatencyWrite,,ms,100,[index1[2]:clusClusterStatsIoLatencyWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.27,(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.27-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.27')/(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.21-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.21')
+0,clusClusterStatsIoLatencyRead,,ms,100,[index1[2]:clusClusterStatsIoLatencyRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.26,(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.26-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.26')/(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.20-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.20')
+,clusClusterStatsQDepthWrite,,,,[index1[2]:clusClusterStatsQDepthWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.25,(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.25-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.25')
+,clusClusterStatsQDepthRead,,,,[index1[2]:clusClusterStatsQDepthRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.24,(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.24-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.24')
+1,clusClusterStatsbytesWrite,MBS,MBS,,[index1[2]:clusClusterStatsbytesWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.23,((1.3.6.1.4.1.9804.3.1.1.2.12.48.1.23-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.23')/t)/1000000
+1,clusClusterStatsbytesRead,MBS,MBS,,[index1[2]:clusClusterStatsbytesRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.22,((1.3.6.1.4.1.9804.3.1.1.2.12.48.1.22-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.22')/t)/1000000
+1,clusClusterStatsIOsWrite,IOPS,IOPS,,[index1[2]:clusClusterStatsIOsWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.21,(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.21-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.21')/t
+1,clusClusterStatsIOsRead,IOPS,IOPS,, [index1[2]:clusClusterStatsIOsRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.48.1.20,(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.20-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.20')/t
+0,clusVolumeStatsIoLatencyWrite,,ms,100,[index1[2]:clusVolumeStatsIoLatencyWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.43,(1.3.6.1.4.1.9804.3.1.1.2.12.97.1.43-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.43')/(1.3.6.1.4.1.9804.3.1.1.2.12.97.1.37-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.37')
+0,clusVolumeStatsIoLatencyRead,,ms,100,[index1[2]:clusVolumeStatsIoLatencyRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.42,(1.3.6.1.4.1.9804.3.1.1.2.12.97.1.42-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.42')/(1.3.6.1.4.1.9804.3.1.1.2.12.97.1.36-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.36')
+,clusVolumeStatsQDepthWrite,,,,[index1[2]:clusVolumeStatsQDepthWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.41,(1.3.6.1.4.1.9804.3.1.1.2.12.97.1.41-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.41')
+,clusVolumeStatsQDepthRead,,,,[index1[2]:clusVolumeStatsQDepthRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.40,(1.3.6.1.4.1.9804.3.1.1.2.12.97.1.40-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.40')
+1,clusVolumeStatsbytesWrite,MBS,MBS,,[index1[2]:clusVolumeStatsbytesWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.39,((1.3.6.1.4.1.9804.3.1.1.2.12.97.1.39-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.39')/t)/1000000
+1,clusVolumeStatsbytesRead,MBS,MBS,,[index1[2]:clusVolumeStatsbytesRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.38,((1.3.6.1.4.1.9804.3.1.1.2.12.97.1.38-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.38')/t)/1000000
+1,clusVolumeStatsIOsWrite,IOPS,IOPS,,[index1[2]:clusVolumeStatsIOsWrite:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.37,(1.3.6.1.4.1.9804.3.1.1.2.12.97.1.37-1.3.6.1.4.1.9804.3.1.1.2.12.97.1.37')/t
+1,clusVolumeStatsIOsRead,IOPS,IOPS,,[index1[2]:clusVolumeStatsIOsRead:1:0],1.3.6.1.4.1.9804.3.1.1.2.12.97.1.36,(1.3.6.1.4.1.9804.3.1.1.2.12.48.1.20-1.3.6.1.4.1.9804.3.1.1.2.12.48.1.20')/t
