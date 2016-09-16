@@ -26,16 +26,27 @@ Copyright 2016 Hewlett Packard Enterprise Development LP.
 
 
 import csv
+import json
 
 from pyhpeimc.auth import *
 from pyhpeimc.plat.perf import *
 
 auth = IMCAuth("http://", "10.101.0.203", "8080", "admin", "admin")
 
+'''
+with open('perf_task.csv') as csvfile:
+    perf_tasks = csv.DictReader(csvfile)
+    for task in perf_tasks:
+        print (json.dumps(task, indent = 4))
+'''
+
+
+
 with open('perf_task.csv') as csvfile:
     perf_tasks = csv.DictReader(csvfile)
     for task in perf_tasks:
         add_perf_task(task, auth.creds, auth.url)
-
+        print ("Task Added Successfully")
+'''
 
 
