@@ -1,0 +1,32 @@
+
+<adapter name="NetScreen">
+	<description>Juniper (formerly NetScreen) firewalls; VPNs, OS version 2.6.1, 5.x, 6.x</description>
+	<version>1.0.0</version>
+	<services>
+		<service name="CLICommon">
+			<item type="common">NetScreen_Common_CLI.xml</item>
+		</service>
+
+		<service name="CleanupParser">
+			<item type="parser_definition">NetScreen_Cleanup_Parser.xml</item>
+			<item type="perl_script">NetScreen_Cleanup_Parser_Script.pl</item>
+		</service>
+
+		<service name="ConfigBackup">
+			<item type="builder_definition">NetScreen_Config_Backup_Builder.xml</item>
+			<item type="tcl_script">NetScreen_Config_Backup_Builder_Script.xml</item>
+		</service>
+
+		<service name="ConfigDeploy">
+			<item type="builder_definition">NetScreen_Config_Deploy_Builder.xml</item>
+			<item type="tcl_script">NetScreen_Config_Deploy_Builder_Script.xml</item>
+		</service>
+		
+		<service name="ImageDeploy">
+			<item type="builder_definition">NetScreen_Image_Deploy_Builder.xml</item>
+			<item type="tcl_script">NetScreen_Image_Deploy_Builder_Script.xml</item>
+		</service>
+		
+	</services>
+</adapter>
+

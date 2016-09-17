@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<parser>
+	<perlfile>CiscoIOS_XR_Cleanup_Parser_Script.pl</perlfile>
+	
+	<script name="cleanupPartionName">
+		<callfunction name="cleanupPartionName">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">partion_name</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupFreeSize">
+		<callfunction name="cleanupFreeSize">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">free_size</result>
+		</callfunction>
+	</script>	
+</parser>

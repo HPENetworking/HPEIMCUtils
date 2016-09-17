@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<common>
+
+    <mode name="initialize" method="cli">
+        <require-mode>connect</require-mode>
+        <enter>
+            initialize.tcl
+        </enter>
+    </mode>
+
+    <mode name="enable" method="cli">
+        <error>Failed to get to enable mode. </error>
+        <require-mode>initialize</require-mode>
+        <enter>
+            enter_enable.tcl
+        </enter>
+        <exit>
+            exit_enable.tcl
+        </exit>
+    </mode>
+    
+    <mode name="admin" method="cli">
+        <error>Failed to get to admin mode. </error>
+        <require-mode>initialize</require-mode>
+        <enter>
+            enter_admin.tcl
+        </enter>
+        <exit>
+            exit_admin.tcl
+        </exit>
+    </mode>
+</common>
+

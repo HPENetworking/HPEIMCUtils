@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<definition>
+
+	<action name="deploy_image">	    
+		<step>
+			<command name="deploy_image" description="download image via TFTP"/>
+		</step>	
+	</action>	
+	
+	<action name="set_device_boot">		    
+        <step>
+            <command name="set_device_boot" description="set OS boot order via CLI"/>
+        </step>
+    </action>
+    
+    <action name="delete_image">		    
+        <step>
+            <command name="delete_image" description="delete image via CLI"/>
+        </step>
+    </action>
+
+</definition>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<definition>
+    <action name="deploy_running_config">
+        <!--step>
+			<command name="deploy_config_scp" description="deploy to running configuration via SCP">                
+            </command>
+		</step-->
+		<step>
+			<command name="load_running_config_cli" description="load deployed configuration via CLI">                
+            </command>
+		</step>
+		<step>
+			<command name="commit_config" description="commit deployed configuration">                
+            </command>
+		</step>
+		<step>
+			<command name="cleanup_deployed_file" description="erase copied configuration file">              
+            </command>
+		</step>
+	</action>
+	
+	<action name="deploy_startup_config">
+		<!--step>
+			<command name="deploy_config_scp" description="deploy to running configuration via SCP">                
+            </command>
+		</step-->
+		<step>
+			<command name="deploy_startup_config_tftp" description="deploy to startup configuration via TFTP through CLI">                
+            </command>
+		</step>			
+		<step>
+			<command name="load_startup_config_cli" description="load deployed configuration via CLI">                
+            </command>
+		</step>		
+		<step>
+			<command name="cleanup_deployed_file" description="erase copied configuration file">              
+            </command>
+		</step>
+	</action>
+
+    <action name="save_config">
+		<step>
+			<command name="save_config" description="save the device running configuration to startup"/>
+		</step>
+	</action>
+	
+	<action name="reload_device">
+		<step>
+			<command name="reload_device" description="reboot device"/>
+		</step>
+	</action>
+
+</definition>
