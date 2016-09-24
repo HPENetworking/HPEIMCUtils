@@ -1,3 +1,3 @@
-# Gather SSH Templates
+# Gather System Vendors
 
 This script is in progress
