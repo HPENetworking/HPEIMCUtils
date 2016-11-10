@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<parser>
+	<perlfile>Arista_Cleanup_Parser_Script.pl</perlfile>
+	
+	<script name="cleanupPartionName">
+		<callfunction name="cleanupPartionName">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">partion_name</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupFreeSize">
+		<callfunction name="cleanupFreeSize">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">free_size</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupConfiguration">
+		<callfunction name="cleanupConfiguration">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">configuration</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupTFTPConfiguration">
+		<callfunction name="cleanupTFTPConfiguration">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">cleanedConfig</result>
+		</callfunction>
+	</script>
+	
+	<script name="cleanupVersion">
+		<callfunction name="cleanupVersion">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">version</result>
+		</callfunction>
+	</script>
+
+
+	<script name="getTarValue">
+		<callfunction name="getTarValue">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">testvalue</result>
+		</callfunction>
+	</script>
+	
+	<script name="getBootValue">
+		<callfunction name="getBootValue">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">bootvalue</result>
+		</callfunction>
+	</script>
+	
+	<script name="getDeploymentParsingSuccess">
+		<callfunction name="getDeploymentParsingSuccess">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">testvalue</result>
+		</callfunction>
+	</script>
+	
+		<script name="cleanupImageVersion">
+		<callfunction name="cleanupImageVersion">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">image_version</result>
+		</callfunction>
+	</script>	
+	
+	<script name="cleanupImagePosition">
+		<callfunction name="cleanupImagePosition">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">image_position</result>
+		</callfunction>
+	</script>	
+	
+	<script name="cleanupImageSize">
+		<callfunction name="cleanupImageSize">
+			<parameterspec name="0" type="data_string"/>
+			<result type="single">image_size</result>
+		</callfunction>
+	</script>	
+</parser>
