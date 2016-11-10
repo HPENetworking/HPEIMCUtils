@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<scripts>
+	<command name="prepare_startup_config_cli" method="CLI">
+		<error>Failed to prepare configuration in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>		
+		<require-mode>exec</require-mode>		
+		<script>
+            prepare_startup_config_cli.tcl
+		</script>
+	</command>
+    
+	<command name="backup_startup_config_scp" method="SCP">
+		<error>Failed to copy configuration from the device using SCP.</error>		
+		<require-mode>exec</require-mode>	
+		<script>
+            backup_startup_config_scp.tcl
+		</script>
+	</command>
+	
+	<command name="backup_startup_config_tftp" method="TFTP">
+		<error>Failed to upload configuration to TFTP server.</error>		
+		<require-mode>exec</require-mode>	
+		<script>
+            backup_startup_config_tftp.tcl
+		</script>
+	</command>
+
+	<command name="backup_startup_config_cli" method="CLI">
+		<error>Failed to dump startup configuration in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            backup_startup_config_cli.tcl
+		</script>
+	</command>
+
+</scripts>
