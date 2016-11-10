@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--sysoid adapt adapter-->
+<adapters>
+	<type name="CLI">
+	        <adapter name="AristaEOSGeneric">
+    			<description>Arista EOS Version 4.x </description>
+	        	    <sysoid>1.3.6.1.4.1.30065.1.*</sysoid>
+	        </adapter>
+	</type>
+</adapters>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<scripts>
+    
+	<command name="deploy_running_config_tftp" method="TFTP">
+		<error>Failed to download configuration from TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            deploy_running_config_tftp.tcl
+		</script>
+	</command>
+
+	<command name="deploy_running_config_scp" method="SCP">
+		<error>Failed to download configuration from SCP server.  SCP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>connect</require-mode>
+		<script>
+            deploy_running_config_scp.tcl
+		</script>
+	</command>
+
+	<command name="deploy_startup_config_tftp" method="TFTP">
+		<error>Failed to download configuration from TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            deploy_startup_config_tftp.tcl
+		</script>
+	</command>
+	
+	<command name="deploy_startup_config_scp" method="SCP">
+		<error>Failed to download configuration from SCP server.  SCP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>connect</require-mode>
+		<script>
+            deploy_startup_config_scp.tcl
+		</script>
+	</command>
+
+	<command name="reload_device" method="CLI">
+	    <error>An error occurred while trying to reload device.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            reload.tcl
+		</script>
+	</command>
+
+	<command name="save_config" method="CLI">
+	    <error>An error occurred while trying to save the configuration.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            save_config.tcl
+		</script>
+	</command>
+
+</scripts>

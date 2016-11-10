@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<definition>
+
+	<action name="backup_running_config">
+	    <step>
+    		<command name="backup_running_config_cli" description="Backup running configuration via CLI">
+    			<result name="running_configuration">
+    				<parser parserName="CleanupParser" parserRet="configuration" parserScript="cleanupConfiguration"/>
+    			</result>
+    		</command>
+		</step>
+	</action>
+
+	<action name="backup_startup_config">
+	    <step> 
+    		<command name="backup_startup_config_cli" description="Backup startup configuration via CLI">
+    			<result name="startup_configuration">
+    				<parser parserName="CleanupParser" parserRet="configuration" parserScript="cleanupConfiguration"/>
+    			</result>
+    		</command>
+		</step>
+	</action>  
+</definition>
+

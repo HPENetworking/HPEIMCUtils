@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<common>
+
+    <mode name="initialize" method="cli">
+        <require-mode>connect</require-mode>
+        <enter>
+            initialize.tcl
+        </enter>
+    </mode>
+
+    <mode name="exec" method="cli">
+        <error>Failed to get to exec mode. </error>
+        <require-mode>initialize</require-mode>
+        <enter>
+            enter_exec.tcl
+        </enter>
+        <exit>
+            exit_exec.tcl
+        </exit>
+    </mode>
+
+    <mode name="enable" method="cli">
+        <error>Failed to get to enable mode. </error>
+        <require-mode>exec</require-mode>
+        <enter>
+            enter_enable.tcl
+        </enter>
+        <exit>
+            exit_enable.tcl
+        </exit>
+    </mode>
+
+    <mode name="config_term" method="CLI">
+        <error>Failed to get to configure terminal mode.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+        <require-mode>enable</require-mode>
+        <enter>
+            enter_config_terminal.tcl
+        </enter>
+        <exit>
+            exit_config_terminal.tcl
+        </exit>
+    </mode>
+
+    <function name="cleanup" method="CLI">
+        <error>An error occurred while trying to recover from an unexpected prompt.</error>
+        <enter>
+            cleanup.tcl
+        </enter>
+    </function>
+
+    <function name="delete_directory" method="CLI">
+        <error>An error occurred while trying to delete directory from the device.</error>
+        <enter>
+            delete_directory.tcl
+        </enter>
+    </function>
+
+	<function name="delete_file" method="CLI">
+		<error>An error occurred while trying to delete a file from the device.</error>	
+        <enter>
+			delete_file.tcl
+        </enter>
+    </function>
+
+    <function name="save" method="CLI">
+        <error>An error occurred while trying to save the configuration.</error>
+        <enter>
+            save.tcl
+        </enter>
+    </function>
+    
+</common>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<scripts>
+
+	<command name="backup_running_config_tftp" method="TFTP">
+		<error>Failed to upload configuration to TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>		
+		<require-mode>enable</require-mode>		
+		<script>
+            backup_running_config_tftp.tcl
+		</script>
+	</command>
+
+	<command name="backup_running_config_cli" method="CLI">
+		<error>Failed to dump configuration in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            backup_running_config_cli.tcl
+		</script>
+	</command>
+	
+	<command name="backup_running_config_scp" method="SCP">
+		<error>Failed to dump configuration in CLI via scp.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>connect</require-mode>
+		<script>
+            backup_running_config_scp.tcl
+		</script>
+	</command>
+	
+	<command name="get_startup_config" method="CLI">
+		<error>Failed to get startup configuration file name in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>exec</require-mode>
+		<script>
+            get_startup_config.tcl
+		</script>
+	</command>
+    
+	<command name="backup_startup_config_tftp" method="TFTP">
+		<error>Failed to upload startup configuration to TFTP server.  TFTP server may be down, or incorrectly specified, command syntax may be incorrect, or prompts may not be what was expected.</error>		
+		<require-mode>enable</require-mode>	
+		<script>
+            backup_startup_config_tftp.tcl
+		</script>
+	</command>
+
+	<command name="backup_startup_config_cli" method="CLI">
+		<error>Failed to dump startup configuration in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            backup_startup_config_cli.tcl
+		</script>
+	</command>
+	
+	<command name="backup_startup_config_scp" method="SCP">
+		<error>Failed to dump startup configuration in CLI via scp.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>initialize</require-mode>
+		<script>
+            backup_startup_config_scp.tcl
+		</script>
+	</command>
+
+</scripts>

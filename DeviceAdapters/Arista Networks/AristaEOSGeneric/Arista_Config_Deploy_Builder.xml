@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<definition>
+
+	<action name="deploy_running_config">
+		<step>
+			<command name="deploy_running_config_tftp" description="deploy to running configuration via TFTP through CLI">
+                <result name="testvalue">
+                    <parser parserName="CleanupParser" parserRet="testvalue" parserScript="getDeploymentParsingSuccess"/>
+                </result>
+            </command>
+			<command name="deploy_running_config_scp" description="deploy to running configuration via SCP through CLI"/>
+		</step>
+	</action>
+
+	<action name="deploy_startup_config">
+		<step>
+			<command name="deploy_startup_config_tftp" description="deploy to startup configuration via TFTP through CLI"/>
+			<command name="deploy_startup_config_scp" description="deploy to startup configuration via SCP through CLI"/>
+		</step>
+	</action>
+
+	<action name="deploy_startup_config_reload">
+		<step>
+			<command name="deploy_startup_config_tftp" description="deploy to startup configuration via TFTP through CLI"/>
+		</step>
+		<step>
+			<command name="reload_device" description="reboot device"/>
+		</step>
+	</action>
+
+    <action name="save_config">
+		<step>
+			<command name="save_config" description="save the device running configuration to startup"/>
+		</step>
+	</action>
+
+	<action name="reload_device">
+		<step>
+			<command name="reload_device" description="reboot device"/>
+		</step>
+	</action>
+
+</definition>

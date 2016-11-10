@@ -1,0 +1,2 @@
+# Arista Device Adapter
+
