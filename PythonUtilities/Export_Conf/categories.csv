@@ -1,0 +1,18 @@
+name;priority;id;iconId;isDefaultDisplay;link;displayId;topoIconId;preDefined
+Routers;1;0;0;0;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/0', '@rel': 'self', '@op': 'GET'};0;1104;true
+Switches;1;1;1;0;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/1', '@rel': 'self', '@op': 'GET'};1;1105;true
+Servers;1;2;2;0;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/2', '@rel': 'self', '@op': 'GET'};2;1108;true
+Security;1;3;3;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/3', '@rel': 'self', '@op': 'GET'};3;1106;true
+Storage;1;4;4;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/4', '@rel': 'self', '@op': 'GET'};4;1109;true
+Wireless;1;5;5;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/5', '@rel': 'self', '@op': 'GET'};5;1111;true
+Voice;1;6;6;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/6', '@rel': 'self', '@op': 'GET'};6;1112;true
+Printers;1;7;7;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/7', '@rel': 'self', '@op': 'GET'};100;1110;true
+UPS;1;8;8;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/8', '@rel': 'self', '@op': 'GET'};101;1116;true
+Desktops;1;9;9;0;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/9', '@rel': 'self', '@op': 'GET'};102;1107;true
+Others;1;10;10;0;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/10', '@rel': 'self', '@op': 'GET'};103;1113;true
+Surveillance;1;11;13;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/11', '@rel': 'self', '@op': 'GET'};7;1121;true
+Video;1;12;14;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/12', '@rel': 'self', '@op': 'GET'};8;1122;true
+Module;1;13;15;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/13', '@rel': 'self', '@op': 'GET'};10;1128;true
+Virtual Devices;2;14;16;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/14', '@rel': 'self', '@op': 'GET'};9;1129;true
+Application Controller;1;15;17;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/15', '@rel': 'self', '@op': 'GET'};11;1130;true
+SDN Controller;1;16;18;1;{'@href': 'http://192.168.20.21:8080/imcrs/plat/res/category/16', '@rel': 'self', '@op': 'GET'};12;1131;true
