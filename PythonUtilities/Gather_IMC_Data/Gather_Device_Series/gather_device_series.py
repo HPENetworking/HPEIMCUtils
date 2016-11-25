@@ -34,17 +34,17 @@ from pyhpeimc.plat.device import *
 auth = IMCAuth("http://", "10.101.0.203", "8080", "admin", "admin")
 
 
-all_device_models = get_system_device_models(auth.creds, auth.url)
+all_device_series = get_system_series(auth.creds, auth.url)
 
 
-keys = all_device_models[0].keys()
+keys = all_device_series[0].keys()
 
 
 
-with open ('all_device_models.csv', 'w') as file:
+with open ('all_device_series.csv', 'w') as file:
     dict_writer = csv.DictWriter(file, keys)
     dict_writer.writeheader()
-    dict_writer.writerows(all_device_models)
+    dict_writer.writerows(all_device_series)
 
 
 
