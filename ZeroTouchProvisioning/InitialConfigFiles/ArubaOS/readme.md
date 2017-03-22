@@ -10,7 +10,7 @@ These configurations have been provided for the following platforms
 - 3800 J9573A - HP 3800-24G-PoE+-2SFP+ Switch
 - 5400zl J9850A - HP 5406zl Switch
 
-*Note the 2530 configuration will also work with the legacy 2510, 2520, 2610, 2620, and 2540.  The initial configuration file on this repo (2530 folder) contains the IGNORE flag described below, which the 2620 and 2540 support.  For it to work with legacy models (2510, 2610, 2520) change the J# in the header appropriate to the model (The file in the repo actually contains a J# for a 2510 model). 
+*Note the 2530 configuration will also work with the 2510, 2520, 2610, 2620, and 2540.  The initial configuration file on this repo (2530 folder) contains the IGNORE flag described below, which the 2620 and 2540 support.  For it to work with legacy models (2510, 2610, 2520) change the J# in the header appropriate to the model (The file in the repo actually contains a J# for a 2510 model). 
 
 ## ArubaOS Configurations
 
