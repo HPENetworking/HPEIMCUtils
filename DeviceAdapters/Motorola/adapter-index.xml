@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--sysoid adapt adapter-->
+<adapters>
+	<default>AP5131</default>
+    <type name="CLI">
+        <adapter name="AP5131">
+                <description>Motorola AP5131 custom adapter</description>
+            <sysoid>1.3.6.1.4.1.388.11.1.2</sysoid>
+        </adapter>
+    </type>
+</adapters>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<definition>
+
+	<action name="deploy_image">	    
+		<step>
+			<command name="deploy_image" description="download image via TFTP"/>
+			<command name="deploy_image_sftp" description="download image via SFTP"/>
+			<command name="deploy_image_scp" description="download image via SCP"/>
+		</step>	
+	</action>
+	  
+     <action name="backup_to_dev">		    
+        <step>
+            <command name="backup_to_dev" description="backup to dev via CLI"/>
+        </step>
+    </action>
+	    
+    <action name="get_image_version">
+		<step>
+    		<command name="get_image_version" description="Get device image file name via CLI">
+    			<result name="image_version">
+    				<parser parserName="CleanupParser" parserRet="image_version" parserScript="cleanupImageVersion"/>
+    			</result>    			
+    		</command>
+		</step>
+	</action>
+<!--
+	<action name="get_image_position">
+		<step>
+			<command name="get_image_position" description="get current image file position">
+				<result name="image_position">
+    				<parser parserName="CleanupParser" parserRet="image_position" parserScript="cleanupImagePosition"/>
+    			</result>
+			</command>
+		</step>
+	</action>
+
+	<action name="get_image_size">
+		<step>
+    		<command name="get_image_size" description="Get device image file size via CLI">
+    			<result name="image_size">
+    				<parser parserName="CleanupParser" parserRet="image_size" parserScript="cleanupImageSize"/>
+    			</result>
+    		</command>
+		</step>
+	</action>
+	
+	<action name="get_partion_info">
+		<step>
+    		<command name="get_partion_info" description="Get device partion info via CLI">
+    			<result name="partion_name">
+    				<parser parserName="CleanupParser" parserRet="partion_name" parserScript="cleanupPartionName"/>
+    			</result>
+    			<result name="free_size">
+    				<parser parserName="CleanupParser" parserRet="free_size" parserScript="cleanupFreeSize"/>
+    			</result>
+    		</command>
+		</step>
+	</action>
+	-->
+</definition>

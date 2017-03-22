@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<definition>
+    <action name="backup_startup_config">
+      <step>
+         <command name="backup_startup_config_tftp" description="Backup startup via TFTP">
+		 </command>
+       </step>
+    </action>
+	
+	<action name="backup_running_config">
+	    <step>    
+	        <command name="backup_running_config_tftp" description="Backup running configuration via TFTP through CLI">
+    		</command>  			        	
+		</step>
+	</action>
+</definition>

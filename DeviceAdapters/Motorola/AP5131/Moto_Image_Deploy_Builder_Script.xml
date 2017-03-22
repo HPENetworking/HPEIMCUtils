@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<scripts>
+	
+	<command name="deploy_image" method="TFTP">
+		<error>Failed to deploy image in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>		
+		<script>
+            deploy_image.tcl
+		</script>
+	</command>
+	
+	<command name="deploy_image_sftp" method="SFTP-CLIENT">
+		<error>Failed to deploy image in SFTP.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>sftp-exec</require-mode>		
+		<script>
+            deploy_image_sftp.tcl
+		</script>
+	</command>
+	
+	<command name="deploy_image_scp" method="SCP">
+		<error>Failed to deploy image by SCP.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>connect</require-mode>		
+		<script>
+            deploy_image_scp.tcl
+		</script>
+	</command>
+	
+	<command name="get_image_version" method="CLI">
+		<error>Failed to get version information in CLI.  Command syntax may be incorrect, or prompts may not be what was expected.</error>
+		<require-mode>enable</require-mode>
+		<script>
+            get_image_version.tcl
+		</script>
+	</command>
+
+</scripts>
