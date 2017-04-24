@@ -1,0 +1,29 @@
+<adapter name="AP5131">
+        <version>1.0.0</version>
+        <services>
+                <service name="CLICommon">
+                        <item type="common">Moto_Common_CLI.xml</item>
+                </service>
+
+                <service name="ConfigBackup">
+                        <item type="builder_definition">Moto_Config_Backup_Builder.xml</item>
+                        <item type="tcl_script">Moto_Config_Backup_Builder_Script.xml</item>
+                </service>
+				
+			    <service name="ConfigDeploy">
+						<item type="builder_definition">Moto_Config_Deploy_Builder.xml</item>
+						<item type="tcl_script">Moto_Config_Deploy_Builder_Script.xml</item>
+				</service>
+
+                <service name="CleanupParser">
+                        <item type="parser_definition">Moto_Cleanup_Parser.xml</item>
+                        <item type="perl_script">Moto_Cleanup_Parser_Script.pl</item>
+                </service>
+				
+				<service name="ImageDeploy">
+					<item type="builder_definition">Moto_Image_Deploy_Builder.xml</item>
+					<item type="tcl_script">Moto_Image_Deploy_Builder_Script.xml</item>
+				</service>
+
+        </services>
+</adapter>

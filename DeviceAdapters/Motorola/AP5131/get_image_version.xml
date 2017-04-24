@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!-- File Name: get_cur_package_snmp.xml                           -->
+<!-- Purpose:   get device package list information by SNMP        -->
+
+<!--
+$index:     random generate index used for snmp set operation.
+data-type:  INTEGER/Integer32/IpAddress/DisplayString/ObjectIdentifier/RowStatus
+            default is INTEGER                
+oper-type:  SET/GET/GETNEXT , default is SET   
+            SET,     snmp set operation;
+            GET,     snmp get operation;
+            GETNEXT, snmp getnext operation.        
+func-type:  Common/CheckResult/CheckExecResult, default is Oper
+            Common, commit snmp operation;
+            CheckResult, check if the snmp operation result is success;
+            CheckExecResult, check is the snmp exection result is success.
+-->
+
+<definition>  
+    <description>Get the image version</description>
+    <func-type>Common</func-type>   
+    <oper-type>Walk</oper-type>
+	<vb-list>   
+		<vb>
+			<oid>1.3.6.1.4.1.388.11.2.2.1.3.3.0</oid>
+			<var-name>$image_version</var-name>                    
+		  <data-type>DisplayString</data-type>	                  <!-- systemFirmwareRevision -->	
+		</vb> 	
+	</vb-list>
+
+</definition>
