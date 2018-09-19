@@ -29,7 +29,7 @@ platform.
 
 import csv
 from pyhpeimc.auth import *
-from pyhpeimc.plat.device import *
+from pyhpeimc.plat.system import *
 
 auth = IMCAuth("http://", "10.101.0.203", "8080", "admin", "admin")
 
